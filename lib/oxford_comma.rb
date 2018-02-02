@@ -2,9 +2,9 @@ def oxford_comma(array)
 
   if array.size == 0
     array.join
-  else 
+  else
     last_array = array.pop
-    array.join(", ")
+    message = array.join(", ")
     array << " and #{last_array}"
   end
 end
